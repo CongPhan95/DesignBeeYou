@@ -1,0 +1,344 @@
+.nav__bars-btn {
+    width: 24px;
+    height: 24px;
+    display: none;
+}
+
+.nav__mobile {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all linear 0.2s;
+    z-index: 1;
+}
+.nav__mobile-list {
+    margin-top: 24px;
+}
+.nav__mobile-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+    font-size: 1.4rem;
+}
+.nav__mobile-close {
+    position: absolute;
+    color: #333;
+    font-size: 28px;
+    top: 2rem;
+    right: 2rem;
+}
+.nav__input {
+    display: none;
+}
+.nav__input:checked ~ .nav__mobile {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@media (max-width: 739px) {
+    #app {
+        width: 100%;
+    }
+    .row {
+        margin: 0;
+    }
+    .hide_on_mobile {
+        display: none;
+    }
+    .header,
+    .header__navbar {
+        height: 70px;
+    }
+    .header__logo-top {
+        top: -23px;
+        left: 15px;
+    }
+    .header__logo-top-1 {
+        top: -8px;
+        left: 33px;
+    }
+    .header__logo-top-2 {
+        top: -2px;
+        left: 29px;
+    }
+    .header__logo-top-3 {
+        top: 3px;
+        left: 27px;
+    }
+    .header__logo-top-4 {
+        top: 8px;
+        left: 28px;
+    }
+    .header__logo-top-b {
+        top: 13px;
+        left: 14px;
+    }
+    .header__logo-top-e {
+        top: 16px;
+        left: 21px;
+    }
+    .header__logo-top-e-2 {
+        top: 16px;
+        left: 28px;
+    }
+    .header__logo-top-y {
+        top: 15px;
+        left: 34px;
+    }
+    .header__logo-top-o {
+        top: 17px;
+        left: 41px;
+    }
+    .header__logo-top-u {
+        top: 17px;
+        left: 48px;
+    }
+    .header__cart {
+        margin-right: 86px;
+        margin-top: 4px;
+    }
+    .nav__bars-btn {
+        display: block;
+        float: right;
+        margin-top: -54px;
+        margin-right: 28px;
+        padding: 8px;
+    }
+
+    /* Slider */
+    .slide__item {
+        padding: 24px;
+    }
+    .slide__change {
+        margin-top: -24px;
+    }
+    .slide__dot > img {
+        width: 8px;
+        margin: 0 4px 0 4px;
+    }
+    /* End slider */
+
+    /* About */
+    .about {
+        padding: 0 24px;
+    }
+    .about__image {
+        left: 0;
+        width: 100%;
+    }
+    .about__image-girl {
+        width: 40%;
+        top: -15px;
+        left: 30%;
+    }
+    .about__image-dropwater {
+        position: unset;
+        width: 90%;
+    }
+    .about__image-line {
+        margin-top: -55%;
+        margin-left: -25px;
+    }
+    .about__title {
+        margin-top: 180%;
+        padding: 0;
+        font-size: 22px;
+        line-height: 36px;
+    }
+    .about__content {
+        padding: 0;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: -10px;
+    }
+    .row.last {
+        flex-direction: column-reverse;
+    }
+    .about__last {
+        margin-top: 64px;
+    }
+    .about__image-girl2 {
+        width: 156.91px;
+        height: 266.74px;
+        left: 53px;
+    }
+    .about__image-ellipse {
+        width: 100%;
+        left: 0px;
+        top: 50px;
+    }
+    .about__last-info {
+        padding: 16px;
+    }
+    .last__info-btn {
+        width: 100%;
+    }
+    /* End about */
+
+    /* Contarner */
+    .container {
+        padding: 0 24px;
+        margin-top: -82px;
+    }
+    .container__heading {
+        margin-bottom: 32px;
+    }
+    .container__heading .title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .container__heading .description {
+        width: 100%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .row.no-wrap {
+        flex-wrap: nowrap;
+    }
+    .product__item {
+        padding: 4px;
+        border-radius: 8px;
+    }
+    .product__item:hover {
+        border: none;
+    }
+    .product__item-name {
+        margin: 9px 12px 8px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .product__item-price {
+        margin: 8px 12px;
+    }
+    .product__item-ellipce {
+        margin: 0 12px 2px;
+    }
+    .product__item-icon {
+        width: 16px;
+    }
+    .product__item-buy {
+        width: 115px;
+        margin: 0 12px 12px;
+    }
+    /* End container */
+
+    /* Feedback */
+    .feedback {
+        flex-direction: column;
+    }
+    .feedback__left {
+        margin: 0;
+        width: 100%;
+    }
+    .feedback__left-img {
+        width: 70%;
+    }
+    .feedback__right {
+        width: 100%;
+        padding: 24px;
+    }
+    .feedback__title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .feedback__description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .feedback__content {
+        flex-direction: column;
+    }
+    .feedback__content-img {
+        width: 100%;
+    }
+    .feedback__content-change {
+        display: flex;
+    }
+    .feedback__change-up {
+        margin: 16.69px 8px 0;
+    }
+    .feedback__change-down {
+        margin: 16.69px 8px 0;
+    }
+    .feedback__img-up {
+        transform: rotate(90deg);
+    }
+    .feedback__img-down {
+        transform: rotate(90deg);
+        position: absolute;
+        top: 14px;
+        left: 12px;
+    }
+    /* End feedback */
+
+    /* Social */
+    .social {
+        margin-top: 40px;
+        padding: 24px;
+    }
+    .social__body {
+        width: 100%;
+    }
+    .social__title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .social__description {
+        margin: 4px 0 12px 0;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .social__instagram {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .social__instagram-img-1 {
+        left: 12px;
+    }
+    .social__instagram-img-2 {
+        left: 16px;
+    }
+    .social__instagram-img-3 {
+        left: 23px;
+    }
+    .card__instagram {
+        margin-top: 12.38px;
+    }
+    .card__instagram-list {
+        flex-wrap: nowrap;
+    }
+    .card__instagram-item {
+        width: 100%;
+        border-radius: 8.71251px;
+        padding: 4.38px;
+        margin: 0;
+    }
+    /* End social */
+
+    /* Footer */
+    .footer__flex {
+        flex-direction: column;
+    }
+    .footer__link-list {
+        padding: 0px 25px;
+        margin-right: 0;
+        line-height: 65px;
+    }
+    .footer__social-list {
+        display: flex;
+        justify-content: space-around;
+        line-height: 65px;
+    }
+    /* End footer */
+}
